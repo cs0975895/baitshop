@@ -1,0 +1,205 @@
+* {
+    background-color: rgb(99, 99, 129);
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color:aliceblue;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+nav a {
+    background-color:aliceblue;
+    display: block;
+    padding: 8px;
+    gap: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: green;
+}
+
+
+
+nav a:hover {
+    background-color: rgb(167, 167, 35);
+    color: black;
+}
+
+.home {
+    background-image: url('images/storefront.png');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.home h1, .home p {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+
+.bait-shop {
+    background-color: rgb(99, 99, 129);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+
+.bait-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: aliceblue;
+    border: 1px solid black;
+
+}
+.bait-container div {
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.bait-container > h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.bait-container ul, .bait-container li, .bait-container h2, #pricing-note {
+    background-color: aliceblue;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#goldfish {
+    font-weight: bold;
+}
+
+.bait-container img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    background-color: aliceblue;
+}
+    
+
+
+#pricing-note {
+    color: rgb(100, 28, 28);
+    text-align: end;
+    direction: ltr;
+    font-size: 5vw;
+    float: left;
+    
+}
+
+
+
+.spooling-services {
+    background-image:url(images/rods.png);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.spooling-text {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+    .spooling-text h2,
+    .spooling-text p {
+        margin: 0;
+        background-color: aliceblue;
+    }
+
+
+
+.contact {
+    display: flex;
+    position: sticky;
+    bottom: 0px;
+    background-color:aliceblue;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.contact a {
+    background-color:aliceblue;
+    display: block;
+    padding: 8px;
+    gap: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: green;
+}
+
+.contact a:hover {
+    background-color: rgb(167, 167, 35);
+    color: black;
+}
+
+.contact h2 {
+    background-color: aliceblue;
+    margin: 0;
+    display: none;
+}
+
+@media (min-width: 768px)
+{
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contact {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contact h2 {
+        display: block;
+        
+    }
+}
